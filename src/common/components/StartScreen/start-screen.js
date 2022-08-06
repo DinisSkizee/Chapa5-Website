@@ -1,32 +1,27 @@
 import Head from "next/head";
 
-import Logo from "../Logo/logo";
-import MenuItems from "../menuItems";
-import FirstPageLine from "../firstPageLine";
+import Header from "../Header/header";
 
 const StartScreen = () => {
   return (
     <>
       <Head>
         <title>Chapa5</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
-      <div className="flex flex-row w-full h-screen bg-[#C08552] gap-10">
-        <div className="h-screen flex items-center">
-          <MenuItems />
+      {/* Background */}
+      <div className="absolute flex justify-center content-center w-[100%] h-[100vh] bg-[#fff]">
+        {/* Background Inside */}
+        <div
+          className="w-[85%] h-[86.11%] rounded-[45px] my-auto"
+          style={{
+            background:
+              "linear-gradient(89.64deg, #93C297 41.46%, rgba(147, 194, 171, 0.63) 62.56%, #93BAC2 82.04%)",
+          }}
+        >
+          <Header />
         </div>
-        <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
-          <Logo />
-        </div>
-        <div className="absolute left-[50%] -translate-x-[50%] bottom-2">
-          <FirstPageLine />
-        </div>
+        {/* Stairs & Bambu */}
       </div>
     </>
   );

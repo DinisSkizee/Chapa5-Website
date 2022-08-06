@@ -17,6 +17,10 @@ a {
   box-sizing: border-box;
 }
 
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
