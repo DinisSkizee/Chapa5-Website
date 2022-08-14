@@ -7,7 +7,7 @@ const RopeStairs = () => {
     <>
       {/* Stairs */}
       {/* Then Left-0 */}
-      <div className="absolute top-0 left-[6.82%]">
+      <div className="absolute top-0 left-0">
         <Image src={LinhasCordas} />
       </div>
     </>

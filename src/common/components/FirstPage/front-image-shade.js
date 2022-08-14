@@ -3,7 +3,7 @@ import Image from "next/image";
 import frontImage from "/public/assets/frontImage.png";
 import frontImageShade from "/public/assets/frontImageShade.png";
 
-const FrontBackground = () => {
+const FrontImageAndShade = () => {
   return (
     <>
       {/* Image & Shade */}
@@ -18,4 +18,4 @@ const FrontBackground = () => {
   );
 };
 
-export default FrontBackground;
+export default FrontImageAndShade;

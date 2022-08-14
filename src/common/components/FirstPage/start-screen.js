@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-import Bamboos from "../bamboos";
-import FrontBackground from "../frontBackground";
-import Roosters from "../roosters";
-
-import Header from "../Header/header";
-import RopeStairs from "../rope-stairs";
+import Bamboos from "./bamboos";
+import Roosters from "./roosters";
+import Header from "./header";
+import RopeStairs from "./rope-stairs";
+import FrontImageAndShade from "./front-image-shade";
+import TitleAndDescription from "./title-description";
 
 const StartScreen = () => {
   return (
@@ -33,10 +33,13 @@ const StartScreen = () => {
           <Bamboos />
 
           {/* Image Background */}
-          <FrontBackground />
+          <FrontImageAndShade />
 
           {/* Rooster */}
           <Roosters />
+
+          {/* Text */}
+          <TitleAndDescription />
         </div>
       </div>
     </>

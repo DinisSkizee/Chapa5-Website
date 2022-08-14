@@ -7,7 +7,11 @@ module.exports = {
     "./src/common/components/**.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Bevan: ["Bevan", "cursive"],
+      },
+    },
   },
   plugins: [],
 };
