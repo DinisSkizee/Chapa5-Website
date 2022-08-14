@@ -11,26 +11,21 @@ import galo6 from "/public/assets/galohue5.png";
 
 const Roosters = () => {
   const roosters = [
-    { index: 1, image: galo1 },
-    { index: 2, image: galo2 },
-    { index: 3, image: galo3 },
-    { index: 4, image: galo4 },
-    { index: 5, image: galo5 },
-    { index: 6, image: galo6 },
+    { image: galo1 },
+    { image: galo2 },
+    { image: galo3 },
+    { image: galo4 },
+    { image: galo5 },
+    { image: galo6 },
   ];
   return (
-    <div className="flex flex-col justify-center items-center absolute w-[168px] h-[239px] right-[670px] top-[304px]">
+    <div className="flex flex-col justify-start items-center absolute w-[168px] h-[236px] right-[670px] top-[306px] overflow-hidden">
       {/* Rooster & Shade*/}
-      {roosters.map((image, index) => (
-        <Image
-          src={image}
-          width={73}
-          height={137}
-          className="z-40"
-          key={index}
-        />
+      {roosters.map(({ image }) => (
+        <RoosterSlider image={image} />
       ))}
-      <div className="absolute z-30 top-[11rem]">
+
+      <div className="absolute z-30 top-[10.8rem]">
         <Image src={roosterShade} width={53} height={23} />
       </div>
     </div>
@@ -38,3 +33,13 @@ const Roosters = () => {
 };
 
 export default Roosters;
+
+const RoosterSlider = ({ image }) => {
+  return (
+    <div
+      className={`flex justify-center items-center min-w-[168px] min-h-[236px]`}
+    >
+      <Image src={image} width={73} height={137} className="z-40" />
+    </div>
+  );
+};

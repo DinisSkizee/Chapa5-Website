@@ -8,7 +8,9 @@ export default function Home() {
       <Head>
         <title>Chapa5</title>
       </Head>
-      <StartScreen />
+      <section className="min-h-screen">
+        <StartScreen />
+      </section>
     </>
   );
 }

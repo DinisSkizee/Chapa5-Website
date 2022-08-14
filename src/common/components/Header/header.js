@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { HiMenuAlt4 } from "react-icons/hi";
 
 const Header = () => {

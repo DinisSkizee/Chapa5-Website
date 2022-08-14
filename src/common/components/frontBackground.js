@@ -7,10 +7,11 @@ const FrontBackground = () => {
   return (
     <>
       {/* Image & Shade */}
-      <div className="absolute right-[420px] top-0 z-30">
+
+      <div className="absolute left-[43.43%] top-0 z-30">
         <Image src={frontImage} />
       </div>
-      <div className="absolute right-[323px] top-[75px] z-10">
+      <div className="absolute left-[43.43%] top-[6.85%] z-10">
         <Image src={frontImageShade} />
       </div>
     </>

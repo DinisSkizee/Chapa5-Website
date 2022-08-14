@@ -15,10 +15,10 @@ const StartScreen = () => {
       </Head>
 
       {/* Background */}
-      <div className="flex justify-center content-center w-[1920px] h-[1080px] bg-[#fff] fixed">
+      <div className="flex justify-center content-center w-[100%] h-[100%] bg-[#fff] fixed">
         {/* Background Inside */}
         <div
-          className="w-[85%] min-h-[930px] rounded-[45px] my-auto overflow-hidden"
+          className="w-[86%] min-h-[86.3%] rounded-[45px] my-auto overflow-hidden"
           style={{
             background:
               "linear-gradient(89.64deg, #93C297 41.46%, rgba(147, 194, 171, 0.63) 62.56%, #93BAC2 82.04%)",
