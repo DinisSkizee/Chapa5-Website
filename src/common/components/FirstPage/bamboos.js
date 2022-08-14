@@ -25,12 +25,12 @@ const Bamboos = () => {
     },
   ];
   return (
-    <>
+    <div className="absolute grid grid-cols-[1fr] right-[210px] z-20">
       {/* Bamboo */}
       {bamboos.map((i) => (
         <Bamboo image={i.image} top={i.top} color={i.color} />
       ))}
-    </>
+    </div>
   );
 };
 
@@ -39,7 +39,7 @@ export default Bamboos;
 const Bamboo = ({ image, top, color }) => {
   return (
     <div
-      className={`absolute right-[210px] z-20`}
+      className="z-20 row-start-1 col-start-1"
       style={{ transform: `translateY(${top}vh)` }}
     >
       <motion.div
